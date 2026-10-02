@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn tạo Fixed Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling cho Fixed Header / Navbar */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Styling cho phần nội dung chính */
+        .main {
+            padding: 16px;
+            margin-top: 50px; /* Tránh cho nội dung bị che khuất bởi navbar */
+            height: 1500px;  /* Tạo độ dài trang để kiểm tra hiệu ứng cuộn */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Navbar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+    <!-- Nội dung chính -->
+    <div class="main">
+        <h1>Fixed Top Menu</h1>
+        <h2>Scroll page này để xem hiệu ứng cuộn</h2>
+        <p>Thanh điều hướng sẽ luôn giữ cố định ở phía trên cùng màn hình khi bạn cuộn trang.</p>
+        <p>Nội dung mẫu...</p>
+    </div>
+
+</body>
+</html>
